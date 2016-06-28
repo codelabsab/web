@@ -5,7 +5,7 @@ Code Labs Webpage running in docker container
 
 # Instructions
 
-`git clone https://github.com/kamigerami/codelabs.git`
+`git clone https://github.com/codelabsab/web.git`
 
 place your cert.pem and privkey.pem inside src/cert/ directory
 `mkdir src/cert`
