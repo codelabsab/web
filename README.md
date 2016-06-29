@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/kamigerami/codelabs.svg?branch=master)](https://travis-ci.org/kamigerami/codelabs)
-
 
 # Code Labs AB
 Code Labs Webpage running in docker container
@@ -14,6 +12,15 @@ place your cert.pem and privkey.pem inside src/cert/ directory
 
 Using Makefile:
 
-`make` to to build image and `make start` to run in detach mode.
+`make` to build image  
+
+`make run` to run in detach mode.
 
 Go to https://localhost:443
+
+
+# Alternative instructions
+
+place your cert.pem and privkey.pem inside ./src/cert/ directory
+
+docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $(pwd)/src/web/:/usr/share/nginx/html/ --volume $(pwd)/src/cert/:/etc/nginx/cert/ codelabsab/web

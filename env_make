@@ -1,6 +1,3 @@
-PORTS = -p 8080:80 -p 8443:443
+PORTS = -p 80:80 -p 443:443
 
 VOLUMES = --volume $(shell pwd)/src/web/:/usr/share/nginx/html/ --volume $(shell pwd)/src/cert/:/etc/nginx/cert/
-
-#ENV = \
-#  -e DIRECTORY=$(pwd)
