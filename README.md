@@ -12,9 +12,9 @@ place your cert.pem and privkey.pem inside src/cert/ directory
 
 Using Makefile:
 
-`make` to build image  
+`make build` to build image  
 
-`make run` to run in detach mode.
+`make` to run in detach mode.
 
 Go to https://localhost:443
 

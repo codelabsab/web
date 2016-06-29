@@ -34,4 +34,4 @@ rm:
 release: build
 	make push -e VERSION=$(VERSION)
 
-default: build
+default: run
