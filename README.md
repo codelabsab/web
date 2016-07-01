@@ -23,4 +23,8 @@ Go to https://localhost:443
 
 place your cert.pem and privkey.pem inside ./src/cert/ directory
 
-docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $(pwd)/src/web/:/usr/share/nginx/html/ --volume $(pwd)/src/cert/:/etc/nginx/cert/ codelabsab/web
+`docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $(pwd)/src/web/:/usr/share/nginx/html/ --volume $(pwd)/src/cert/:/etc/nginx/cert/ codelabsab/web`
+
+or use docker-compose
+
+`docker-compose up -d`
