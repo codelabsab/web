@@ -44,7 +44,7 @@ a:hover {
   font-size: 30px;
   line-height: 1.1;
   font-weight: 300;
-  color: #333;
+  color: #2945b5;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -67,7 +67,7 @@ a:hover {
   padding: 140px 0;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #02bdd5;
+  color: #2945b5;
 }
 .navbar.navbar-default {
   border: 0;
@@ -77,13 +77,16 @@ a:hover {
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
 }
+.navbar-brand { 
+  height: 90px;
+}
 .navbar-header .navbar-brand {
-  padding: 5px 0;
+  padding: 0px 0;
 }
 .navbar-header .navbar-brand a {
   height: auto;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle {
@@ -94,7 +97,7 @@ a:hover {
   color: #fff;
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
-  padding: 15px 0;
+  padding: 10px 0;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #dedede;
@@ -103,7 +106,7 @@ a:hover {
   background: transparent;
 }
 #top-bar.animated-header {
-  padding: 20px 0;
+  padding: 10px 0;
   background: #ffffff;
   box-shadow: none;
 }
@@ -123,7 +126,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #02bdd5;
+  color: #2945b5;
 }
 .navbar-custom .nav li > a {
   position: relative;
@@ -165,7 +168,7 @@ a:hover {
 #hero-area h1 {
   font-size: 40px;
   line-height: 50px;
-  color: #333;
+  color: #000;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -194,7 +197,7 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background: #02bdd5;
+  background: #2945b5;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
@@ -220,7 +223,7 @@ a:hover {
 #call-to-action .block .btn-contact {
   background: #fff;
   border: none;
-  color: #02bdd5;
+  color: #2945b5;
   padding: 16px 35px;
   margin-top: 20px;
   font-size: 12px;
@@ -369,7 +372,7 @@ figure figcaption h4 {
   margin: 0;
 }
 figure figcaption h4 a {
-  color: #02bdd5;
+  color: #2945b5;
 }
 figure figcaption p {
   font-size: 14px;
@@ -402,7 +405,7 @@ figure figcaption p {
 #feature .icon {
   text-decoration: none;
   color: #fff;
-  background-color: #02bdd5;
+  background-color: #2945b5;
   height: 100px;
   text-align: center;
   width: 100px;
@@ -413,7 +416,7 @@ figure figcaption p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  text-shadow: #00a4ba 1px 1px, #00a4ba 2px 2px, #00a4ba 3px 3px, #00a4ba 4px 4px, #00a4ba 5px 5px, #00a4ba 6px 6px, #00a4ba 7px 7px, #00a4ba 8px 8px, #00a4ba 9px 9px, #00a4ba 10px 10px, #00a4ba 11px 11px, #00a4ba 12px 12px, #00a4ba 13px 13px, #00a4ba 14px 14px, #00a4ba 15px 15px, #00a4ba 16px 16px, #00a4ba 17px 17px, #00a4ba 18px 18px, #00a4ba 19px 19px, #00a4ba 20px 20px, #00a4ba 21px 21px, #00a4ba 22px 22px, #00a4ba 23px 23px, #00a4ba 24px 24px, #00a4ba 25px 25px, #00a4ba 26px 26px, #00a4ba 27px 27px, #00a4ba 28px 28px, #00a4ba 29px 29px, #00a4ba 30px 30px, #00a4ba 31px 31px, #00a4ba 32px 32px, #00a4ba 33px 33px, #00a4ba 34px 34px, #00a4ba 35px 35px, #00a4ba 36px 36px, #00a4ba 37px 37px, #00a4ba 38px 38px, #00a4ba 39px 39px, #00a4ba 40px 40px, #00a4ba 41px 41px, #00a4ba 42px 42px, #00a4ba 43px 43px, #00a4ba 44px 44px, #00a4ba 45px 45px, #00a4ba 46px 46px, #00a4ba 47px 47px, #00a4ba 48px 48px, #00a4ba 49px 49px, #00a4ba 50px 50px, #00a4ba 51px 51px, #00a4ba 52px 52px, #00a4ba 53px 53px, #00a4ba 54px 54px, #00a4ba 55px 55px, #00a4ba 56px 56px, #00a4ba 57px 57px, #00a4ba 58px 58px, #00a4ba 59px 59px, #00a4ba 60px 60px, #00a4ba 61px 61px, #00a4ba 62px 62px, #00a4ba 63px 63px, #00a4ba 64px 64px, #00a4ba 65px 65px, #00a4ba 66px 66px, #00a4ba 67px 67px, #00a4ba 68px 68px, #00a4ba 69px 69px, #00a4ba 70px 70px, #00a4ba 71px 71px, #00a4ba 72px 72px, #00a4ba 73px 73px, #00a4ba 74px 74px, #00a4ba 75px 75px, #00a4ba 76px 76px, #00a4ba 77px 77px, #00a4ba 78px 78px, #00a4ba 79px 79px, #00a4ba 80px 80px, #00a4ba 81px 81px, #00a4ba 82px 82px, #00a4ba 83px 83px, #00a4ba 84px 84px, #00a4ba 85px 85px, #00a4ba 86px 86px, #00a4ba 87px 87px, #00a4ba 88px 88px, #00a4ba 89px 89px, #00a4ba 90px 90px, #00a4ba 91px 91px, #00a4ba 92px 92px, #00a4ba 93px 93px, #00a4ba 94px 94px, #00a4ba 95px 95px, #00a4ba 96px 96px, #00a4ba 97px 97px, #00a4ba 98px 98px, #00a4ba 99px 99px, #00a4ba 100px 100px;
+  text-shadow: #2945b5 1px 1px, #2945b5 2px 2px, #2945b5 3px 3px, #2945b5 4px 4px, #2945b5 5px 5px, #2945b5 6px 6px, #2945b5 7px 7px, #2945b5 8px 8px, #2945b5 9px 9px, #2945b5 10px 10px, #2945b5 11px 11px, #2945b5 12px 12px, #2945b5 13px 13px, #2945b5 14px 14px, #2945b5 15px 15px, #2945b5 16px 16px, #2945b5 17px 17px, #2945b5 18px 18px, #2945b5 19px 19px, #2945b5 20px 20px, #2945b5 21px 21px, #2945b5 22px 22px, #2945b5 23px 23px, #2945b5 24px 24px, #2945b5 25px 25px, #2945b5 26px 26px, #2945b5 27px 27px, #2945b5 28px 28px, #2945b5 29px 29px, #2945b5 30px 30px, #2945b5 31px 31px, #2945b5 32px 32px, #2945b5 33px 33px, #2945b5 34px 34px, #2945b5 35px 35px, #2945b5 36px 36px, #2945b5 37px 37px, #2945b5 38px 38px, #2945b5 39px 39px, #2945b5 40px 40px, #2945b5 41px 41px, #2945b5 42px 42px, #2945b5 43px 43px, #2945b5 44px 44px, #2945b5 45px 45px, #2945b5 46px 46px, #2945b5 47px 47px, #2945b5 48px 48px, #2945b5 49px 49px, #2945b5 50px 50px, #2945b5 51px 51px, #2945b5 52px 52px, #2945b5 53px 53px, #2945b5 54px 54px, #2945b5 55px 55px, #2945b5 56px 56px, #2945b5 57px 57px, #2945b5 58px 58px, #2945b5 59px 59px, #2945b5 60px 60px, #2945b5 61px 61px, #2945b5 62px 62px, #2945b5 63px 63px, #2945b5 64px 64px, #2945b5 65px 65px, #2945b5 66px 66px, #2945b5 67px 67px, #2945b5 68px 68px, #2945b5 69px 69px, #2945b5 70px 70px, #2945b5 71px 71px, #2945b5 72px 72px, #2945b5 73px 73px, #2945b5 74px 74px, #2945b5 75px 75px, #2945b5 76px 76px, #2945b5 77px 77px, #2945b5 78px 78px, #2945b5 79px 79px, #2945b5 80px 80px, #2945b5 81px 81px, #2945b5 82px 82px, #2945b5 83px 83px, #2945b5 84px 84px, #2945b5 85px 85px, #2945b5 86px 86px, #2945b5 87px 87px, #2945b5 88px 88px, #2945b5 89px 89px, #2945b5 90px 90px, #2945b5 91px 91px, #2945b5 92px 92px, #2945b5 93px 93px, #2945b5 94px 94px, #2945b5 95px 95px, #2945b5 96px 96px, #2945b5 97px 97px, #2945b5 98px 98px, #2945b5 99px 99px, #2945b5 100px 100px;
 }
 #contact-section {
   padding: 90px 0;
@@ -425,10 +428,10 @@ figure figcaption p {
   margin-top: 35px;
   color: #fff;
   outline: none;
-  background: #02bdd5;
+  background: #2945b5;
 }
 #contact-section .contact-form .btn-send:hover {
-  border: 1px solid #02bdd5;
+  border: 1px solid #2945b5;
 }
 #contact-section input {
   display: block;
@@ -478,7 +481,7 @@ figure figcaption p {
 #contact-section .email i,
 #contact-section .phone i {
   font-size: 45px;
-  color: #02bdd5;
+  color: #2945b5;
 }
 #contact-section .address h5,
 #contact-section .email h5,
@@ -505,7 +508,7 @@ figure figcaption p {
   margin-top: 10px;
 }
 #footer .copyright a {
-  color: #02bdd5;
+  color: #2945b5;
 }
 #footer .social {
   text-align: right;
@@ -517,10 +520,10 @@ figure figcaption p {
 }
 #footer .social li a {
   font-size: 22px;
-  color: #02bdd5;
+  color: #2945b5;
 }
 .cd-headline.slide .cd-words-wrapper {
-  color: #02bdd5;
+  color: #2945b5;
 }
 ul.social-icons {
   height: auto;
@@ -546,7 +549,7 @@ ul.social-icons li {
   background-size: cover;
   padding: 120px 0 25px 0;
   position: relative;
-  background: #02bdd5;
+  background: #2945b5;
   color: #fff;
 }
 .global-page-header h2 {
@@ -579,7 +582,7 @@ ul.social-icons li {
 }
 #product-showcase-banner .block h2 {
   font-size: 40px;
-  color: #02bdd5;
+  color: #2945b5;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -697,7 +700,7 @@ ul.social-icons li {
 }
 #related-items .block h4 span {
   float: right;
-  color: #02bdd5;
+  color: #2945b5;
 }
 #related-items .block .img-overly {
   position: relative;
@@ -733,7 +736,7 @@ ul.social-icons li {
 }
 .service-page .service-parts .block i {
   font-size: 35px;
-  color: #02bdd5;
+  color: #2945b5;
 }
 .service-page .service-parts .block p {
   padding: 0 8px;
@@ -791,7 +794,7 @@ ul.social-icons li {
 }
 .wrapper_404 h1 {
   font-size: 200px;
-  color: #02bdd5;
+  color: #2945b5;
   line-height: 1;
 }
 .wrapper_404 h2 {
@@ -839,7 +842,7 @@ ul.social-icons li {
   font-size: 13px;
 }
 .team-member h3 {
-  color: #02bdd5;
+  color: #2945b5;
   margin-bottom: 0;
   font-size: 20px;
 }
@@ -847,7 +850,7 @@ ul.social-icons li {
   font-size: 14px;
 }
 .team-member .social-icons a {
-  background: #02bdd5;
+  background: #2945b5;
   color: #fff;
   padding: 4px 8px;
   display: inline-block;
@@ -869,7 +872,7 @@ ul.social-icons li {
   font-weight: 300;
 }
 .about-feature .about-feature-1 {
-  background: #02bdd5;
+  background: #2945b5;
 }
 .about-feature .about-feature-2 {
   background: #00B0C7;
@@ -907,15 +910,15 @@ article {
   margin-top: 20px;
 }
 .blog-content .btn-details {
-  color: #02bdd5;
+  color: #2945b5;
   padding: 0;
-  background: #02bdd5;
+  background: #2945b5;
   color: #fff;
   padding: 8px 18px;
   border-radius: 0;
   margin-top: 15px;
   border: 1px solid #fff;
-  box-shadow: 0px 0px 0px 1px #02bdd5;
+  box-shadow: 0px 0px 0px 1px #2945b5;
 }
 .blog-post-image {
   margin-top: 30px;
@@ -978,7 +981,7 @@ article {
   font-size: 15px;
 }
 .sidebar .recent-post ul li a:hover {
-  color: #02bdd5;
+  color: #2945b5;
 }
 .sidebar .recent-post time {
   font-weight: 300;
@@ -1019,7 +1022,7 @@ article {
   padding: 30px 20px;
 }
 .single-post .media .media-body a {
-  color: #02bdd5;
+  color: #2945b5;
   font-size: 12px;
 }
 .single-post .media .media {
@@ -1039,7 +1042,7 @@ article {
   border-radius: 0;
 }
 .single-post .post-comment .btn-send {
-  background: #02bdd5;
+  background: #2945b5;
   color: #fff;
   border-radius: 0;
 }
@@ -1050,7 +1053,7 @@ article {
 .social-share a {
   font-size: 20px;
   color: #fff;
-  background: #02bdd5;
+  background: #2945b5;
   padding: 4px 10px;
   display: inline-block;
 }
