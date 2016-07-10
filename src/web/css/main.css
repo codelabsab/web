@@ -77,7 +77,7 @@ a:hover {
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
 }
-.navbar-brand { 
+.navbar-brand {
   height: 90px;
 }
 .navbar-header .navbar-brand {
@@ -92,6 +92,17 @@ a:hover {
 .navbar-inverse .navbar-toggle {
   background: #444;
 }
+.col-sm-padding {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #top-bar {
   background: #fff;
   color: #fff;
