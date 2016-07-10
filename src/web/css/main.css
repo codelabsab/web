@@ -79,6 +79,8 @@ a:hover {
 }
 .navbar-brand {
   height: 90px;
+  position: relative;
+  z-index: -1;
 }
 .navbar-header .navbar-brand {
   padding: 0px 0;
