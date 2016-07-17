@@ -6,24 +6,16 @@ Code Labs Webpage running in docker container
 
 `git clone https://github.com/codelabsab/web.git`
 
-place your cert.pem and privkey.pem inside src/cert/ directory
+place your cert files (.pem) inside any directory
 
-`mkdir src/cert`
+export these environment variables to your shell.
 
-Using Makefile:
+`
+export SRCDIR=$(pwd)/src/web/
+export CERTDIR=/etc/pki/tls/certs/codelabs.se/
+`
 
-`make build` to build image  
-
-`make` to run in detach mode.
-
-Go to https://localhost:443
-
-
-# Alternative instructions
-
-place your cert.pem and privkey.pem inside ./src/cert/ directory
-
-`docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $(pwd)/src/web/:/usr/share/nginx/html/ --volume $(pwd)/src/cert/:/etc/nginx/cert/ codelabsab/web`
+`docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $SRCDIR:/usr/share/nginx/html/ --volume $CERTDIR:/etc/nginx/cert/ codelabsab/web`
 
 or use docker-compose
 

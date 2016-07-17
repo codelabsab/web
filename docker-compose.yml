@@ -1,8 +1,8 @@
 codelabs-web:
   image: codelabsab/web
   volumes:
-    - /etc/letsencrypt/archive/codelabs.se:/etc/nginx/cert:ro
-    - /usr/share/nginx/html/codelabs/src/web:/usr/share/nginx/html:ro
+    - "${CERTDIR}:/etc/nginx/cert:ro"
+    - "${SRCDIR}:/usr/share/nginx/html:ro"
   ports:
     - "443:443"
     - "80:80"
