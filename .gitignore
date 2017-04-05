@@ -1,1 +1,2 @@
 src/cert/*.pem
+.DS_Store
