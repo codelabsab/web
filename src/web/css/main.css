@@ -538,7 +538,7 @@ figure figcaption p {
   font-size: 22px;
   color: #2945b5;
 }
-.cd-headline.slide .cd-words-wrapper {
+.cd-headline.slide .cd-words-wrapper h3 {
   color: #2945b5;
 }
 ul.social-icons {
@@ -817,6 +817,12 @@ ul.social-icons li {
   font-size: 50px;
   margin-top: 0;
 }
+.wrapper_404 h3 {
+  font-size: 75px;
+  color: #2945b5;
+  line-height: 1;
+}
+
 .wrapper_404 .btn-home {
   background: #414141;
   border: none;
