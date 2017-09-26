@@ -1,3 +1,4 @@
+WEBDIR := $(abspath $(dir src/web/))
+CERTDIR := $(abspath $(dir cert/))
 PORTS = -p 80:80 -p 443:443
-
-VOLUMES = --volume $SRCDIR:/usr/share/nginx/html/ --volume $CERTDIR:/etc/nginx/cert/
+VOLUMES = --volume $(WEBDIR):/usr/share/nginx/html/ --volume $(CERTDIR):/etc/nginx/cert/

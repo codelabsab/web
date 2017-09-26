@@ -34,4 +34,8 @@ rm:
 release: build
 	make push -e VERSION=$(VERSION)
 
+test:
+	echo $(WEBDIR)
+	echo $(CERTDIR)
+
 default: run
