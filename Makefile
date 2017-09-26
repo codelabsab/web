@@ -17,7 +17,7 @@ shell:
 	docker run --rm --name $(NAME)-$(REPO) -i -t $(PORTS) $(VOLUMES) $(NS)/$(REPO):$(VERSION) sh
 
 run:
-	docker run -d --name $(NAME)-$(REPO) $(PORTS) $(VOLUMES) $(NS)/$(REPO):$(VERSION)
+	docker run -d --name $(NAME)-$(REPO) $(PORTS) $(VOLUMES) $(NS)/$(REPO)
 
 start:
 	docker start $(NAME)-$(REPO)
