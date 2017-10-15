@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM php:alpine
 MAINTAINER CodeLabs <contact@codelabs.se>
 
 RUN apk-install ca-certificates nginx curl && mkdir -p /usr/share/nginx/html/ /var/log/nginx/ /etc/nginx/cert/
