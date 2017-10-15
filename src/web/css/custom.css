@@ -48,3 +48,11 @@
 .tp--gradient-20.tp--section.tp--diagonal:before {
     background: linear-gradient(to left, #3572f4, #2945b5) !important;
  }
+
+.div-featured {
+    	/* Rotate div */
+    	-ms-transform: rotate(-9deg); /* IE 9 */
+    	-webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-9deg);
+
+}
