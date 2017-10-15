@@ -1,0 +1,50 @@
+/* change to code labs light blue color */
+.btn-primary {
+    background-color: #3a6de1 !important;
+    border-color: #3a6de1 !important;
+}
+/* code labs darker blue when hovering */
+.btn-primary:hover {
+    background-color: #2945b5 !important;
+    border-color: #2945b5 !important;
+}
+
+/* move logo to the left and make it larger */
+.tp--header .logo a img {     
+    max-width: 115px;
+    vertical-align: inherit;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+/* make the straight mini logo larger */
+.tp--header-shrink.shrink .logo a img {
+    max-width: 75px;
+
+}
+
+/* gradient color in boxes */
+.tp--icon-gradient {
+  color: #3a6de1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3572f4), to(#2945b5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: initial;
+}
+
+/* label primary - were hiring */
+.label-primary {
+  background-color: #3a6de1 !important;
+}
+
+/* pre loader spinners */
+.tp--preloader .tp--spinner .loader-inner div {
+    background-color: #2945b5;
+}
+
+/* gradient block front page bottom */
+.tp--gradient-20.tp--section.tp--diagonal:before {
+    background: linear-gradient(to left, #3572f4, #2945b5) !important;
+ }

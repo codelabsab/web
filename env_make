@@ -1,0 +1,3 @@
+PORTS = -p 80:80 -p 443:443
+
+VOLUMES = --volume $SRCDIR:/usr/share/nginx/html/ --volume $CERTDIR:/etc/nginx/cert/
