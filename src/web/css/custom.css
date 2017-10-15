@@ -49,6 +49,7 @@
     background: linear-gradient(to left, #3572f4, #2945b5) !important;
  }
 
+/* rotating feature text on front page */
 .div-featured {
     	/* Rotate div */
     	-ms-transform: rotate(-9deg); /* IE 9 */
@@ -56,3 +57,9 @@
     	transform: rotate(-9deg);
 
 }
+
+/* gradient for icon on what we do on front page */
+.tp--section .page-header i {
+    background: linear-gradient(to left, #3572f4, #2945b5) !important;
+}
+
