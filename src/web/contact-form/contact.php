@@ -10,8 +10,8 @@
 // -------------------------------------------
 
 
-$from = 'Contact form <your_email@example.com>';
-$sendTo = 'Your name <your_email@example.com>';
+$from = 'Contact form <contact@codelabs.se>';
+$sendTo = 'Code Labs AB <contact@codelabs.se>';
 
 
 // -------------------------------------------
