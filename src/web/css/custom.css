@@ -9,7 +9,8 @@
     border-color: #2945b5 !important;
 }
 
-/* move logo to the left and make it larger */
+/* move logo to the left ankcekvcvdntvbc
+ * d make it larger */
 .tp--header .logo a img {     
     max-width: 200px;
     vertical-align: inherit;
@@ -62,4 +63,22 @@
 .tp--section .page-header i {
     background: linear-gradient(to left, #3572f4, #2945b5) !important;
 }
+
+/* grayscale avatar images */
+.display-pic {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* make join us bottom part white instead of light grey */
+.tp--section-light {
+    background-color: #fff !important;
+}
+
+/* debug all divs 
+div {
+    outline: 1px solid red;
+}
+*/
 

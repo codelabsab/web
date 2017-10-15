@@ -29,6 +29,8 @@ $errorMessage = 'There was an error while submitting the form. Please try again.
 
 // let's do the sending
 
+
+
 try
 {
     $emailText = "You have a new message from your website contact form\n=============================\n";
@@ -61,7 +63,6 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 
     header('Content-Type: application/json');
 
-    echo $encoded;
 }
 else {
     echo $responseArray['message'];
