@@ -10,10 +10,6 @@
 // -------------------------------------------
 
 
-$from = 'Contact form <contact@codelabs.se>';
-$sendTo = 'Code Labs AB <contact@codelabs.se>';
-
-
 // -------------------------------------------
 
 
@@ -41,6 +37,10 @@ try
             $emailText .= "$fields[$key]: $value\n";
         }
     }
+
+    $from = 'Contact form <contact@codelabs.se>';
+    $sendTo = 'Code Labs AB <contact@codelabs.se>';
+
 
     $headers = array('Content-Type: text/plain; charset=iso 8859-1;',
         'MIME-Version: 1.0',

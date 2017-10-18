@@ -1,7 +1,5 @@
-FROM php:alpine
+FROM boxedcode/alpine-nginx-php-fpm
 MAINTAINER CodeLabs <contact@codelabs.se>
-
-RUN apk add --no-cache ca-certificates nginx curl postfix && mkdir -p /usr/share/nginx/html/ /var/log/nginx/ /etc/nginx/cert/
+RUN apk add --no-cache postfix mailx
 COPY src/nginx.conf /etc/nginx/nginx.conf
-EXPOSE 80 443
-CMD ["nginx", "-g", "daemon off;"]
+COPY src/supervisord.conf /etc/supervisord.conf
