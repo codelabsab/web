@@ -12,10 +12,10 @@
 /* move logo to the left ankcekvcvdntvbc
  * d make it larger */
 .tp--header .logo a img {     
-    max-width: 200px;
+    max-width: 100px;
     vertical-align: inherit;
-    padding-top: 10px;
-    padding-left: 15px;
+    padding-top: 3px;
+    padding-left: 0px;
 }
 
 /* make the straight mini logo larger */
