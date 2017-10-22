@@ -207,7 +207,7 @@
         </div>
       </div>
     </section>
-    <!-- Footer
+<!-- Footer
     ================================================== -->
     <footer id="footer" class="tp--footer tp--section-dark tp--gradient-22 tp--footer-1 text-xs-center">
       <div class="container">
@@ -216,18 +216,18 @@
           <!-- empty row -->
           </div>
           <div class="col-sm-3 col-md-3">
-            <h3>Code Labs AB</h3>
+            <h3>SITE</h3>
             <ul class="list-unstyled">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="career.html">Career&emsp;<span class="label label-primary">We're hiring!</span></a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-sm-3 col-md-3">
-             <h3>Contact</h3>
-            <p>Drottninggatan 59, 111 21 Stockholm</p> 
+            <h3>ADDRESS</h3>
             <p>Code Labs AB</p>
+            <p>Drottninggatan 59, 111 21 Stockholm</p> 
             <p>org: 559064-2442</p>
             <p>VAT: SE556614318501</p>
           </div>
@@ -244,151 +244,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Login Form -->
-    <div id="modal-login" class="tp--authentication text-center white-popup mfp-hide">
-      <section class="tp--authentication-container">
-        <div class="page-header">
-          <h3>Login to your account</h3>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <form id="form_login" class="form-authentication">
-              <div class="row tp--social-login">
-                <div class="col-xs-4">
-                  <a title="Facebook" class="btn btn-signup tp--facebook fa fa-facebook" href="#"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a title="LinkedIn" class="btn btn-signup tp--linkedin fa fa-linkedin" href="#"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a title="Twitter" class="btn btn-signup tp--twitter fa fa-twitter" href="#"></a>
-                </div>
-                <div class="col-xs-12">
-                    <p class="divider">or</p>
-                </div>
-              </div>
-              <div class="form-group">
-                  <i class="icon-envelope"></i>
-                  <input class="form-control" id="id_login" name="login" value="" placeholder="Enter your email" type="email">
-              </div>
-              <div class="form-group">
-                  <i class="icon-lock"></i>
-                  <input class="form-control" id="id_password" name="password" placeholder="Enter your password" type="password">
-              </div>
-              <input class="button" name="commit" type="submit" value="Login">
-              <div class="tp--authentication-footer">
-                <p class="links clearfix">
-                  <a class="pull-left" href="#">Don't have an account? Sign up</a>
-                  <a class="pull-right" href="#">Forgot your password?</a>
-                </p>
-              </div>
-            </form>
-          </div>
-        </div>
-       </section>
-    </div>
-    <!-- Registration Form -->
-    <div id="modal-register" class="tp--authentication text-center white-popup mfp-hide">
-      <section class="tp--authentication-container">
-        <div class="page-header">
-          <h3>Register a new account</h3>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <form id="form_register" class="form-authentication">
-              <div class="row tp--social-login">
-                <div class="col-xs-4">
-                    <a title="Facebook" class="btn btn-signup tp--facebook fa fa-facebook" href="#"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a title="LinkedIn" class="btn btn-signup tp--linkedin fa fa-linkedin" href="#"></a>
-                </div>
-                <div class="col-xs-4">
-                    <a title="Twitter" class="btn btn-signup tp--twitter fa fa-twitter" href="#"></a>
-                </div>
-                <div class="col-xs-12">
-                    <p class="divider">or</p>
-                </div>
-              </div>
-              <div class="form-group">
-                  <i class="icon-envelope"></i>
-                  <input class="form-control" id="id_register" name="login" value="" placeholder="Enter your email" type="email">
-              </div>
-              <div class="form-group">
-                  <i class="icon-lock"></i>
-                  <input class="form-control" id="id_password" name="password" placeholder="Enter your password" type="password">
-              </div>
-              <div class="form-group">
-                  <i class="icon-lock"></i>
-                  <input class="form-control" id="id_password_reenter" name="password_reenter" placeholder="Re-enter your password" type="password">
-              </div>
-              <input class="button" name="commit" type="submit" value="Register your account">
-              <div class="tp--authentication-footer">
-                <p class="disclaimer">By registering an account, you agree with our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-                <p class="links">
-                  <a class="" href="#">Already have an account? Login</a>
-                </p>
-              </div>
-            </form>
-          </div>
-        </div>
-       </section>
-    </div>
-    <!-- Contact Form -->
-    <div id="modal-contact" class="tp--contact text-center white-popup mfp-hide">
-      <div class="page-header">
-        <h3>Get in touch</h3>
-        <p>Feel free to get in touch with us by sending your message below.</p>
-      </div>
-      <form id="contact-form" method="post" action="contact-form/contact.php" role="form">
-        <div class="messages"></div>
-        <div class="controls">
-          <div class="row">
-              <div class="col-md-12">
-                <label for="form_name">Full Name *</label>
-                <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_lastname" class="sr-only">First Name *</label> 
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="First name" required="required">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                      <label for="form_lastname" class="sr-only">Last Name *</label>
-                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last name" required="required">
-                      <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="form-group">
-                      <label for="form_email">Email *</label>
-                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required">
-                      <div class="help-block with-errors"></div>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="form-group">
-                      <label for="form_message">Message *</label>
-                      <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message" rows="4" required="required"></textarea>
-                      <div class="help-block with-errors"></div>
-                  </div>
-              </div>
-              <div class="col-md-12 text-center">
-                  <input type="submit" class="btn btn-primary btn-lg btn-circular btn-send" value="Send your message">
-              </div>
-          </div>
-        </div>
-      </form>
-    </div>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap Plugins -->
