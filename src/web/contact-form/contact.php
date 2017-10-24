@@ -1,35 +1,13 @@
 <?php
 
-
-
-// -------------------------------------------
-// --- ENTER YOUR NAME & EMAIL ADDRESS HERE
-// 
-//     FOR EXAMPLE: $sendTo = 'David Parrelli <david@example.com>';
-//
-// -------------------------------------------
-
-
-// -------------------------------------------
-
-
-
-
-
-// You can also configure these values if you know what you are doing
-
-$subject = 'New message from your website contact form';
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+$subject = 'New message from codelabs contact form';
+$fields = array('firstname' => 'Name', 'surname' => 'Surname', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Your message has been successfully submitted.';
 $errorMessage = 'There was an error while submitting the form. Please try again.';
 
-// let's do the sending
-
-
-
 try
 {
-    $emailText = "You have a new message from your website contact form\n=============================\n";
+    $emailText = "You have a new message from codelabs contact form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 
@@ -42,11 +20,11 @@ try
     $sendTo = 'Code Labs AB <contact@codelabs.se>';
 
 
-    $headers = array('Content-Type: text/plain; charset=iso 8859-1;',
+    $headers = array('Content-Type: text/plain; charset=UTF-8',
         'MIME-Version: 1.0',
         'From: ' . $from,
         'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
+        'Return-Path: ' . $from
     );
     
     mail($sendTo, $subject, $emailText, implode("\r\n", $headers));
