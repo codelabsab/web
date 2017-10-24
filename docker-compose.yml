@@ -3,7 +3,7 @@ codelabs-web-olive:
   #image: codelabsab/web
   volumes:
     - "/etc/letsencrypt/:/etc/letsencrypt:ro"
-    - "/usr/share/html/codelabs_olive_theme/src/web/:/usr/share/nginx/html:ro"
+    - "/usr/share/html/codelabs_v.2.0/src/web/:/usr/share/nginx/html:ro"
     - "/var/log/nginx:/var/log/nginx"
   ports:
     - "433:443"
