@@ -2,9 +2,8 @@ codelabs-web-olive:
   build: ./
   #image: codelabsab/web
   volumes:
-    - "/etc/letsencrypt/:/etc/letsencrypt:ro"
-    - "/usr/share/html/codelabs_v.2.0/src/web/:/usr/share/nginx/html:ro"
-    - "/var/log/nginx:/var/log/nginx"
+    - "./src/cert/:/etc/letsencrypt/live/codelabs.se/:ro"
+    - "./src/web/:/usr/share/nginx/html:ro"
   ports:
     - "443:443"
     - "80:80"
