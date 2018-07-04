@@ -1,8 +1,13 @@
 
 # Code Labs AB
-Code Labs Webpage running in docker container
 
-# Instructions
+codelabs.se branch is the branch of our actual website
+
+dev.codelabs.se is the branch for our dev website.
+
+all other branches are unused.
+
+# deprecated instructions
 
 `git clone https://github.com/codelabsab/web.git`
 
