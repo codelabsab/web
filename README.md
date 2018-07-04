@@ -1,4 +1,7 @@
 
+[![Build Status](https://travis-ci.org/codelabsab/web.svg?branch=codelabs.se)](https://travis-ci.org/codelabsab/web)
+
+#
 # Code Labs AB
 Code Labs Webpage running on:
 
