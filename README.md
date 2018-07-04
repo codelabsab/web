@@ -1,21 +1,18 @@
 
 # Code Labs AB
-Code Labs Webpage running in docker container
+Code Labs Webpage running on:
+
+- s3 static website (AWS S3)
+- CDN edge locations (AWS CloudFront)
+- certification manager (AWS Certificate manager))
+- Route 53 (AWS)
+- Travis-CI build on push -> push to s3 bucket
+- publish website on dev.codelabs.se S3 bucket
 
 # Instructions
 
-`git clone https://github.com/codelabsab/web.git`
+`If you push new code travis-CI will trigger a build and push the files to the dev.codelabs.se S3 bucket on AWS`
 
-place your cert files (.pem) inside any directory
+`If you want to push it to codelabs.se - change or update the .travis.yml file Bucket location name`
 
-export these environment variables to your shell.
-
-`export SRCDIR=$(pwd)/src/web/`
-
-`export CERTDIR=/etc/pki/tls/certs/codelabs.se/`
-
-`docker run -d -p 443:443 -p 80:80 --name codelabs-web --volume $SRCDIR:/usr/share/nginx/html/ --volume $CERTDIR:/etc/nginx/cert/ codelabsab/web`
-
-or use docker-compose
-
-`docker-compose up -d`
+`Pushes everything under ./src/web/* to S3 bucket`
