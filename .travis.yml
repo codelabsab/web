@@ -9,4 +9,4 @@ deploy:
   acl: public_read
   on:
     repo: codelabsab/web
-    branch: v.2.0
+    branch: dev.codelabs.se
