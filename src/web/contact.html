@@ -38,6 +38,34 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-108068039-1');ga('send','pageview');
     </script>
+    <!-- test contact form stuff with jquery instead of php -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     function submitToAPI() {
+       var URL = "https://3eowzd622g.execute-api.us-east-1.amazonaws.com/contact-form";
+       var data = {
+         firstname: $("#form_firstname").val(),
+         surname: $("#form_surname").val(),
+         email: $("#form_email").val(),
+         message: $("#form_message").val()
+       };
+       $.ajax({
+         type: "POST",
+         url: URL,
+         dataType: "json",
+         contentType: "application/json",
+         data: JSON.stringify(data),
+         success: function () {
+           // clear form and show a success message
+           alert("Your message has been successfully submitted. We will contact you shortly.");
+         },
+         error: function () {
+           // show an error message
+           alert("There was an error while submitting the form. Please try again.");
+         }
+       });
+     }
+    </script>
   </head>
   <body class="tp--inner">
     <!--[if lt IE 10]>
@@ -130,7 +158,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <form id="contact-form" method="post" action="contact-form/contact.php" role="form">
+            <form id="contact-form" role="form">
               <div class="messages"></div>
               <div class="controls">
                 <div class="row">
@@ -172,7 +200,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
-                        <input type="submit" class="btn btn-primary btn-lg btn-send" value="Send your message">
+                        <input type="submit" class="btn btn-primary btn-lg btn-send" onClick="submitToAPI()">
                     </div>
                 </div>
               </div>
