@@ -9,4 +9,4 @@ deploy:
   acl: public_read
   on:
     repo: codelabsab/web
-    branch: dev.codelabs.se
+    branch: fix-contact-form
