@@ -1,399 +1,286 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <!-- Basic Page Needs
-        ================================================== -->
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!-- IE -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <!-- other browsers -->
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <title> Code Labs </title>
-        <meta name="description" content="We are Code Labs">
-        <meta name="keywords" content="Code Labs AB">
-        <meta name="author" content="Code Labs AB">
-        <!-- Mobile Specific Metas
-        ================================================== -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Hero area slider css-->
-        <link rel="stylesheet" href="css/slider.css">
-        <!-- owl craousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <!-- template main css file -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
-
-        <!-- Template Javascript Files
-        ================================================== -->
-        <!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- owl carouserl js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- bootstrap js -->
-
-        <script src="js/bootstrap.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- slider js -->
-        <script src="js/slider.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <!-- template main js -->
-        <script src="js/main.js"></script>
-    </head>
-    <body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   </button>
-                   <!-- /responsive nav button -->
-
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="index.html" >
-                            <img src="images/codelabs.svg" alt="" height="85px">
-                        </a>
-                    </div>
-                    <!-- /logo -->
-                </div>
-                <!-- main menu -->
-                <!-- main menu -->
-              <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                  <div class="main-menu">
-                      <ul class="nav navbar-nav navbar-right">
-                          <li>
-                              <a href="index.html" >Home</a>
-                          </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- /main nav -->
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Labs AB</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Mandatory Stylesheets -->
+    <link rel="stylesheet" href="css/base/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- Plugin Stylesheets -->
+    <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
+  	<link rel="stylesheet" href="css/plugins/owl-carousel/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.custom.css">
+  	<link rel="stylesheet" href="css/plugins/devices/devices.min.css">
+  	<link rel="stylesheet" href="css/font-awesome.css">
+  	<link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/plugins/aos/aos.css">
+    <link rel="stylesheet" href="css/plugins/loaders-css/loaders.min.css">
+    <!-- Template Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes/theme-blue.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-108068039-1');ga('send','pageview');
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Page Preloader (only used on index pages) -->
+    <div class="tp--preloader">
+       <div class="tp--spinner loader">
+        <div class="loader-inner ball-beat">
+          <div></div><div></div><div></div>
+        </div>
+       </div>
+    </div>
+    <!-- HEADER
+    ================================================== -->
+    <header class="tp--header tp--header-fixed tp--header-shrink tp--header-1">
+      <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+      <nav class="navbar-wrapper">
+        <div class="container clearfix">
+          <!-- LOGO
+          ================================================== -->
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/codelabs_white_code.svg" class="logo-main" alt="Code Labs AB." width=200 height=100>
+              <img src="images/codelabs.svg" class="logo-dark" alt="Code Labs AB." width=150 height=75>
+            </a>
+          </h1>
+          <!-- NAVIGATION
+          ================================================== -->
+          <div class="navbar tp--nav-dropdown pull-right">
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="links">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="links">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="links">
+                  <a href="career.html">Career</a>
+                </li>
+		            <li class="links">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-        </header>
-
-
-        <!--
-        ==================================================
-        Slider Section Start
-        ================================================== -->
-        <section id="hero-area" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="block wow fadeInUp" data-wow-delay=".3s">
-
-                            <!-- Slider -->
-                            <section class="cd-intro">
-                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                                <span>CODE LABS</span><br>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">DEVOPS</b>
-                                    <b>SYSTEMUTVECKLING</b>
-                                    <b>AUTOMATION</b>
-                                    <b>INFRASTRUKTUR</b>
-                                </span>
-                                </h1>
-                                </section> <!-- cd-intro -->
-                                <!-- /.slider -->
-                                <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                                    Code Labs medarbetare är experter inom systemutveckling, automation, <br>infrastruktur och
-                                    continuous delivery.
-                                </h2>
-<!--                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a> -->
-
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <!-- Dropdown Wrapper -->
+          <div class="morph-dropdown-wrapper">
+            <div class="morph-dropdown-container">
+              <div class="dropdown-list text-center">
+                <ul>
+                  <li class="links">
+                    <a href="index.html" class="tp--nav-label">Home</a>
+                  </li>
+		              <li class="links">
+                    <a href="about.html" class="tp--nav-label">About</a>
+                  </li>
+                  <li class="links">
+                    <a href="career.html" class="tp--nav-label">Career</a>
+                  </li>
+		              <li class="links">
+                    <a href="contact.html" class="tp--nav-label">Contact</a>
+                  </li>
+                </ul>
+                <div class="bg-layer" aria-hidden="true"></div>
+              </div> <!-- dropdown-list -->
+            </div>
+          </div> <!-- morph-dropdown-wrapper -->
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section
+    ================================================== -->
+    <section id="intro" class="tp--intro tp--intro-dark tp--slider-single tp--owl-carousel-single owl-carousel owl-theme tp--intro-height-100" data-carousel-options='{ "items": "1", "mouseDrag": false, "touchDrag": false, "responsive": { "0": { "items":"1" } } }'>
+        <div class="item tp--intro-content-left text-sm-center tp--with-image" style="background: url('images/bg-intro-9.jpg');">
+          <div class="container">
+            <div class="row tp--col-sm-vertical-align tp--col-xs-vertical-align tp--vertical-align-intro">
+              <div class="col-sm-12 col-md-5">
+                <div>
+                  <h2> Do you love to code?</h2>
+                  <p>We are a group of talented developers who are looking for great colleagues to join us in delivering amazing user experiences.</p>
+                  <a class="btn btn-lg btn-primary" href="career.html">Join Us</a>
                 </div>
-            </section><!--/#main-slider-->
-            <!--
-            ==================================================
-            Slider Section Start
-            ================================================== -->
-            <section id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <h2>
-                                Vi är Code Labs
-                                </h2>
-                                <p>
-                                Vi brinner för att hjälpa våra kunder med att automatisera, effektivisera och minimera risker i sin IT-miljö.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                              <img src="images/about/about.jpg" alt="">
-                            </div>
-                        </div>
-                  </div>
-                <!-- TOOLS AND TECHNOLOGY LOGOS WE WORK WITH -->
-                  <div class="row">
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <a href="https://www.ansible.com/" target="_blank"><img src="images/tools/ansible.png" alt="" ></a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://puppet.com" target="_blank"><img src="images/tools/puppet.png" alt="" ></a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://aws.amazon.com/" target="_blank"><img src="images/tools/aws.png" alt=""></a>
-                            </div>
-                    </div>
-                          <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://openshift.com" target="_blank"><img src="images/tools/openshift.png" alt="" ></a>
-                            </div>
-                    </div>
-
-
-                </div>
-
-
-
-                  <div class="row">
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <a href="https://docker.io/" target="_blank"><img src="images/tools/docker_small.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://hashicorp.com" target="_blank"><img src="images/tools/hashicorp.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                          <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://kubernetes.io/" target="_blank"><img src="images/tools/kubernetes.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://cloud.google.com" target="_blank"><img src="images/tools/google_cloud.png" alt="" ></a>
-                            </div>
-
-                        </div>
-                  </div>
-
-
-                  <div class="row">
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <a href="https://jenkins.io/" target="_blank"><img src="images/tools/jenkins.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://go.cd" target="_blank"><img src="images/tools/go.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                          <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://elastic.co/" target="_blank"><img src="images/tools/elastic.png" alt="" ></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-padding">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                            <a href="https://grafana.org" target="_blank"><img src="images/tools/grafana.png" alt="" ></a>
-                            </div>
-                        </div>
-                  </div>
-                <!-- TOOLS AND TECHNOLOGY LOGOS WE WORK WITH -->
-            </section> <!-- /#about -->
-
-            <!-- ==================================================
-            Portfolio Section Start
-            ================================================== -->
-            <section id="feature">
-                <div class="container">
-                    <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Vad vi gör</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-flask-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">The Lab</h4>
-                                    <p>Vi testar alltid ny teknologi och håller oss uppdaterade</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Configuration Management</h4>
-                                    <p>Infrastruktur som kod i Configuration Management verktyg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Agilt</h4>
-                                    <p>Vi gillar Scrum och Kanban</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- add clear fix for awkward resizing issues -->
-                          <div class="clearfix visible-md-block"></div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-americanfootball-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Continuous Delivery</h4>
-                                    <p>Ökad säkerhet vid leverans av kod med continuous delivery</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-keypad-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Containers</h4>
-                                    <p>Bygg och distribuera applikationer på ett snabbt och säkert sätt</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-barcode-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Övervakning</h4>
-                                    <p>Övervakning och logganalys ger en klar bild av system</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- /#feature -->
-
-            <!--
-
-            För mer information om hur vi kan hjälpa er nå era mål: <a href="mailto:contact@codelabs.se?Subject=Hej" target="_top">Code Labs</a>
-            ==================================================
-            Call To Action Section Start
-            ================================================== -->
-            <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Vad tycker du?</h1>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">För mer information</p>
-                                <a href="mailto:contact@codelabs.se" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Kontakta oss</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="col-md-4">
-                        <p class="copyright">Copyright: <span>2017</span> <a href="https://www.codelabs.se">Code Labs AB</a>          Org: <span>559064-2442</span></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="copyright">        Adress: <span>Drottninggatan 59, 111 21, Stockholm</span></p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <!-- Social Media -->
-                        <ul class="social">
-                            <li>
-                                <a href="https://fb.me/codelabsab" class="Facebook" target="_blank">
-                                    <i class="ion-social-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Twitter">
-                                    <i class="ion-social-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/code-labs-ab" class="Linkedin" target="_blank">
-                                    <i class="ion-social-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Google Plus">
-                                    <i class="ion-social-googleplus"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer> <!-- /#footer -->
-
-        </body>
-    </html>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- About Section
+    ================================================== -->
+    <section id="whatwedo" class="tp--section tp--features text-center">
+      <div class="page-header text-center">
+          <i class="icon-loop icons"></i>
+          <h2>What we do</h2>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-layers icon-small"></i>
+            </div>
+         <h3>Software Development</h3>
+              <p>Develop the next-generation technologies that change how people interact with your products and enhance their user experience.</p>
+            </div>
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-organization icon-small"></i>
+            </div>
+         <h3>Infrastructure Engineering</h3>
+              <p>Build systems and infrastructure using strong background in distributed systems and configuration management such as Puppet, Ansible and Chef.</p>
+            </div>
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-screen-smartphone icon-small"></i>
+            </div>
+         <h3>Mobile & Web applications</h3>
+              <p>Create digital content, immersive and portable applications used on billions of devices from smartphones to tablets and more using Swift, Objective-C or Java.</p>
+            </div>
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-cup icon-small"></i>
+            </div>
+            <h3>Java and Backend Development</h3>
+            <p>We have over a decade of experience developing in Java and other backend programming languages, Microservices, Databases and frameworks such as Spring.</p>
+          </div>
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-screen-desktop icon-small"></i>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Html5, Css, Sass, Javascript, AngularJs or ReactJs, it's your choice which framework or tool you want us to use.</p>
+          </div>
+          <div class="col-sm-4 tp--feature">
+            <div class="tp--icon-wrapper">
+              <i class="tp--icon-gradient icon-cloud-download icon-small"></i>
+            </div>
+            <h3>Cloud and Container Technologies</h3>
+            <p>Whether you need to upgrade your container orchestration technology, setup an on premise cloud solution (Openshift) or use AWS, Google or OpenStack. We know how to do it.</p>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+    </section>
+    <!-- Featured Sections
+    ================================================== -->
+    <section id="featured1" class="tp--section tp--featured tp--section-dark tp--gradient-20 tp--diagonal tp--diagonal-1 tp--padding-lg">
+      <div class="container">
+        <div class="row tp--col-sm-vertical-align">
+          <div class="col-md-2 text-center text-md-left"> </div>
+          <div class="col-md-8 text-center text-md-left">
+		<div class="div-featured">
+            <h2>Our clients</h2>
+            <p>We help a wide variety of companies in different industries to achieve their goals and help schools designing their education plan for the next generation of engineers.</p>
+            <a class="btn btn-primary btn-white" href="career.html" role="button">Join Us</a>
+          </div>
+		</div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients
+    ================================================== -->
+    <section id="clients" class="tp--section tp--partners tp--partners-greyscale p-top-md-100 p-bottom-md-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel tp--slider-multiple" data-carousel-options='{ "autoplay":"true", "autoplayTimeout":"4000",  "items":"6", "mouseDrag": false, "touchDrag": false }'>
+              <div class="item">
+                <img src="images/partners/kindred-box.jpg" alt="Kindred">
+              </div>
+              <div class="item">
+                <img src="images/partners/ica-box.jpg" alt="Ica Group">
+              </div>
+              <div class="item">
+                <img src="images/partners/nackademin-box.jpg" alt="Nackademin">
+              </div>
+              <div class="item">
+                <img src="images/partners/ppm-box.jpg" alt="Pensionsmyndigheten">
+              </div>
+              <div class="item">
+                <img src="images/partners/svt-box.jpg" alt="SVT">
+              </div>
+              <div>
+                <img src="images/partners/netent.jpg" alt="NetEnt">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Footer
+    ================================================== -->
+    <footer id="footer" class="tp--footer tp--section-dark tp--gradient-22 tp--footer-1 text-xs-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+          <!-- empty row -->
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h3>SITE</h3>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="career.html">Career&emsp;<span class="label label-primary">We're hiring!</span></a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h3>ADDRESS</h3>
+            <p>Code Labs AB</p>
+            <p>Drottninggatan 59, 111 21 Stockholm</p> 
+            <p>org: 559064-2442</p>
+            <p>tel: 08-128 164 00</p>
+          </div>
+          <div class="col-sm-3 col-md-3">
+    <!-- empty row -->
+          </div>
+        </div>
+        <div class="row tp--social">
+          <div class="col-lg-11 text-center">
+            <a class="icon" href="https://www.linkedin.com/company/15189915/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="icon" href="https://www.facebook.com/codelabsab/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="icon" href="https://github.com/codelabsab" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Template Plugins -->
+    <script src="js/plugins/classie/classie.js"></script>
+    <script src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/modernizr/modernizr-custom.js"></script>
+    <script src="js/plugins/aos/aos.js"
+            integrity="sha384-McD+Tmp+lmBZadiJGm7E+nBPfTrToJ7tG8OpvmPCsyvGbG6VD8nLvRE7O8h9CWk8"
+            crossorigin="anonymous"></script>
+    <script src="js/plugins/jquery-validate/jquery.validate.min.js"></script>
+    <script src="js/plugins/loaders-css/loaders.css.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
