@@ -6,14 +6,13 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Code Labs AB">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Code Labs AB</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
     <!-- Mandatory Stylesheets -->
-    <link rel="stylesheet" href="css/base/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <!-- Plugin Stylesheets -->
     <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
@@ -51,112 +50,78 @@
         </div>
        </div>
     </div>
-    <!-- HEADER
+    <!--
+      NAVBAR
     ================================================== -->
-    <header class="tp--header tp--header-fixed tp--header-shrink tp--header-1">
-      <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
-      <nav class="navbar-wrapper">
-        <div class="container clearfix">
-          <!-- LOGO
-          ================================================== -->
-          <h1 class="logo">
-            <a href="index.html">
-              <img src="images/codelabs_white_code.svg" class="logo-main" alt="Code Labs AB." width=200 height=100>
-              <img src="images/cl-logo-text.png" class="logo-dark" alt="Code Labs AB." width=95 height=25>
-            </a>
-          </h1>
-          <!-- NAVIGATION
-          ================================================== -->
-          <div class="navbar tp--nav-dropdown pull-right">
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="links">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="links">
-                  <a href="about.html">About</a>
-                </li>
-                <li class="links">
-                  <a href="career.html">Career</a>
-                </li>
-		            <li class="links">
-                  <a href="contact.html">Contact</a>
-                </li>
+    <section id="navbarsection">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <p class="mt-2">
+              <small>
+                  <img src="images/cl-logo.svg" class="rounded float-left mr-1" alt="Code Labs AB." width="25" height="33">
+                  <text>
+                    <strong>code</strong>
+                  </text>
+                  <text class="text-primary">labs</text>
+              </small>
+            </p>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-supported-content">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Services</a>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Cloud</a>
+                          <a class="dropdown-item" href="#">DevOps</a>
+                          <a class="dropdown-item" href="#">System Development</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
               </ul>
-            </div>
           </div>
-          <!-- Dropdown Wrapper -->
-          <div class="morph-dropdown-wrapper">
-            <div class="morph-dropdown-container">
-              <div class="dropdown-list text-center">
-                <ul>
-                  <li class="links">
-                    <a href="index.html" class="tp--nav-label">Home</a>
-                  </li>
-		              <li class="links">
-                    <a href="about.html" class="tp--nav-label">About</a>
-                  </li>
-                  <li class="links">
-                    <a href="career.html" class="tp--nav-label">Career</a>
-                  </li>
-		              <li class="links">
-                    <a href="contact.html" class="tp--nav-label">Contact</a>
-                  </li>
-                </ul>
-                <div class="bg-layer" aria-hidden="true"></div>
-              </div> <!-- dropdown-list -->
-            </div>
-          </div> <!-- morph-dropdown-wrapper -->
-        </div>
-      </nav>
-    </header>
-    <!-- Hero Section
-    ================================================== -->
-    <section id="intro" class="tp--intro tp--intro-dark tp--slider-single tp--owl-carousel-single owl-carousel owl-theme tp--intro-height-100" data-carousel-options='{ "items": "1", "mouseDrag": false, "touchDrag": false, "responsive": { "0": { "items":"1" } } }'>
-        <div class="item tp--intro-content-left text-sm-center tp--with-image" style="background: url('images/cloud.jpeg');">
-          <div class="container">
-            <div class="row tp--col-sm-vertical-align tp--col-xs-vertical-align tp--vertical-align-intro">
-              <div class="col-sm-12 col-md-5">
-                <div>
-                  <h2> Are you looking at the cloud? </h2>
-                  <p> 
-                      Code Labs have extensive experience in helping our clients
-                      take full advantage of cloud technologies and infrastructure
-                  </p>
-                  <a class="btn btn-lg btn-primary" href="index.html#cloud">Find out more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </nav>
+      </div>
     </section>
-    
 
     <!-- Cloud section
     ================================================== -->
-    <section id="cloud" class="tp--section tp--feature text-center">
-      <div class="page-header text-center">
-          <i class="icon-cloud-download"></i>
-          <h2>Cloud partner</h2>
-        </div>
-
+    <section id="cloud">
+      <!-- <div class="tp--section tp--feature text-centre tp--section-light" style="background: url('images/cloud.jpeg');"> -->
+        <div class="jumbotron text-light" style="background: linear-gradient( rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7) ), url('images/cloud.jpeg'); background-size: cover; border-radius: 0px">
         <div class="container">
-        <div class="row">
-          <div class="col-md tp--feature">
-            <div class="tp--icon-wrapper">
-              <!-- <i class="tp--icon-gradient icon-cloud-download icon-small"></i> -->
-            </div>
-            <h3> Getting the most out of cloud infrastructure </h3>
-            <p> 
+          <div class="row">
+              <div class="col-sm-12 col-md-5">
+              <h3 class="display-4 text-light text-sm-center text-md-center text-lg-left text-xs-center">
+                <strong style="font-weight: 900">
+                  are you looking at the cloud?
+                </strong>
+              </h3>
+              <p class="lead"> 
                 Our certified cloud architects are experienced in helping clients migrate infrastructure
                 and applications to the cloud all the way from the planning stage through implementations.
                 We can help you plan your migration to lower costs and help increase your development 
-
+              </p>
+              <p class="lead">
                 Getting the most out of a cloud migration requiers knowledge about the cloud and it's different
                 services as well as knowledge about your own infrastructure.
-            </p>
-          </div>
+              </p>
         </div>
+      </div>
+        </div>
+      </div>
+    </div>
     </section>
     
 
@@ -265,7 +230,7 @@
     </section>
 <!-- Footer
     ================================================== -->
-    <footer id="footer" class="tp--footer tp--section-dark tp--gradient-22 tp--footer-1 text-xs-center">
+    <footer id="footer" class="tp--footer tp--section-dark tp--gradient-11 tp--footer-1 text-xs-center">
       <div class="container">
         <div class="row">
           <div class="col-sm-3 col-md-3">
@@ -276,7 +241,7 @@
             <ul class="list-unstyled">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="career.html">Career&emsp;<span class="label label-primary">We're hiring!</span></a></li>
+              <li><a href="career.html">Career</span></a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -287,8 +252,6 @@
             <p>org: 559064-2442</p>
             <p>tel: 08-128 164 00</p>
           </div>
-          <div class="col-sm-3 col-md-3">
-    <!-- empty row -->
           </div>
         </div>
         <div class="row tp--social">
