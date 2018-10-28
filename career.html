@@ -51,65 +51,50 @@
         </div>
        </div>
     </div> -->
-    <!-- HEADER
+    <!--
+      NAVBAR
     ================================================== -->
-    <header class="tp--header tp--header-fixed tp--header-shrink tp--header-1">
-      <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
-      <nav class="navbar-wrapper">
-        <div class="container clearfix">
-          <!-- LOGO
-          ================================================== -->
-          <h1 class="logo">
-            <a href="index.html">
-              <img src="images/codelabs_white_code.svg" class="logo-main" alt="Code Labs AB." width=200 height=100>
-              <img src="images/cl-logo-text.png" class="logo-dark" alt="Code Labs AB." width=95 height=25>
+    <section id="navbarsection">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <p class="mt-2">
+                <small>
+                    <img src="images/cl-logo.svg" class="rounded float-left mr-1" alt="Code Labs AB." width="25" height="33">
+                    <text>
+                      <strong>code</strong>
+                    </text>
+                    <text class="text-primary">labs</text>
+                </small>
+              </p>
             </a>
-          </h1>
-          <!-- NAVIGATION
-          ================================================== -->
-          <div class="navbar tp--nav-dropdown pull-right">
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="links">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="links">
-                  <a href="about.html">About</a>
-                </li>
-                <li class="links">
-                  <a href="career.html">Career</a>
-                </li>
-                <li class="links">
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Dropdown Wrapper -->
-          <div class="morph-dropdown-wrapper">
-            <div class="morph-dropdown-container">
-              <div class="dropdown-list text-center">
-                <ul>
-                  <li class="links">
-                    <a href="index.html" class="tp--nav-label">Home</a>
-                  </li>
-                  <li class="links">
-                    <a href="about.html" class="tp--nav-label">About</a>
-                  </li>
-                  <li class="links">
-                    <a href="career.html" class="tp--nav-label">Career</a>
-                  </li>
-                  <li class="links">
-                    <a href="contact.html" class="tp--nav-label">Contact</a>
-                  </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-supported-content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cloud</a>
+                            <a class="dropdown-item" href="#">DevOps</a>
+                            <a class="dropdown-item" href="#">System Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-                <div class="bg-layer" aria-hidden="true"></div>
-              </div> <!-- dropdown-list -->
             </div>
-          </div> <!-- morph-dropdown-wrapper -->
+          </nav>
         </div>
-      </nav>
-    </header>
+      </section>
     <!-- Inner Page Header
     ================================================== -->
     <!--<section class="tp--inner-header tp--section tp--section-with-bg-overlay tp--section-with-bg-cover tp--height-50 text-center" style="background: url('images/bg-intro-1.jpg');">-->
