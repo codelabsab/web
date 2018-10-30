@@ -1,0 +1,248 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Labs AB</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Mandatory Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- Plugin Stylesheets -->
+    <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
+  	<link rel="stylesheet" href="css/plugins/owl-carousel/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.custom.css">
+  	<link rel="stylesheet" href="css/plugins/devices/devices.min.css">
+  	<link rel="stylesheet" href="css/font-awesome.css">
+  	<link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/plugins/aos/aos.css">
+    <link rel="stylesheet" href="css/plugins/loaders-css/loaders.min.css">
+    <!-- Template Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes/theme-purple.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-108068039-1');ga('send','pageview');
+    </script>
+    <!-- test contact form stuff with jquery instead of php -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     function submitToAPI() {
+       var URL = "https://3eowzd622g.execute-api.us-east-1.amazonaws.com/contact-form";
+       var data = {
+         firstname: $("#form_firstname").val(),
+         surname: $("#form_surname").val(),
+         email: $("#form_email").val(),
+         message: $("#form_message").val()
+       };
+       $.ajax({
+         type: "POST",
+         url: URL,
+         dataType: "json",
+         contentType: "application/json",
+         data: JSON.stringify(data),
+         success: function () {
+           // clear form and show a success message
+           alert("Your message has been successfully submitted. We will contact you shortly.");
+           location.reload();
+         },
+         error: function () {
+           // show an error message
+           alert("There was an error while submitting the form. Please try again.");
+         }
+       });
+     }
+    </script>
+  </head>
+  <body class="tp--inner">
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Page Preloader (only used on index pages) -->
+    <!-- <div class="tp--preloader">
+       <div class="tp--spinner loader">
+        <div class="loader-inner ball-beat">
+          <div></div><div></div><div></div>
+        </div>
+       </div>
+    </div> -->
+    <!--
+      NAVBAR
+    ================================================== -->
+    <section id="navbarsection">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <p class="mt-2">
+                    <small>
+                        <img src="images/code_labs_straight_big_logo.svg" class="float-left mr-1" alt="Code Labs AB." height="20">
+                    </small>
+                  </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-supported-content">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cloud.html">Cloud Services</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    <!-- Inner Page Header
+    ================================================== -->
+    <section class="tp--inner-header tp--section tp--section-with-bg-overlay tp--section-with-bg-cover tp--height-100 text-center" style="background: url('images/bg-intro-5.jpg');background-attachment: fixed">
+      <div class="container tp--vertical-align">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Contact</h2>
+            <p>Send us a message and we'll get back to you as quickly as possible</p>
+            <p></p>
+            <p>contact[@]codelabs.se</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section
+    ================================================== -->
+    <section id="contact" class="tp--section tp--contact tp--padding-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <form id="contact-form" role="form">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                    <div class="col-md-12">
+                      <label for="form_firstname">Full Name *</label>
+                      <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_firstname" class="sr-only">First Name *</label>
+                          <input id="form_firstname" type="text" name="firstname" class="form-control" placeholder="First name" required="required">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_surname" class="sr-only">Last Name *</label>
+                            <input id="form_surname" type="text" name="surname" class="form-control" placeholder="Last name" required="required">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message" rows="4" required="required"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <input type="submit" class="btn btn-primary btn-lg btn-send" onClick="submitToAPI()">
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.row -->
+      </div>
+    </section>
+<!-- Footer
+    ================================================== -->
+    <footer id="footer" class="tp--footer tp--section-dark tp--gradient-18 tp--footer-1 text-xs-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+          <!-- empty row -->
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h3>SITE</h3>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="career.html">Career&emsp;<span class="label label-primary">We're hiring!</span></a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <h3>ADDRESS</h3>
+            <p>Code Labs AB</p>
+            <p>Birger Jarlsgatan 41 A, 111 45 Stockholm</p> 
+            <p>org: 559064-2442</p>
+            <p>tel: 08-128 164 00</p>
+          </div>
+          <div class="col-sm-3 col-md-3">
+    <!-- empty row -->
+          </div>
+        </div>
+        <div class="row tp--social">
+          <div class="col-lg-11 text-center">
+            <a class="icon" href="https://www.linkedin.com/company/15189915/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="icon" href="https://www.facebook.com/codelabsab/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="icon" href="https://github.com/codelabsab" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Template Plugins -->
+    <script src="js/plugins/classie/classie.js"></script>
+    <script src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/modernizr/modernizr-custom.js"></script>
+    <script src="js/plugins/aos/aos.js"
+            integrity="sha384-McD+Tmp+lmBZadiJGm7E+nBPfTrToJ7tG8OpvmPCsyvGbG6VD8nLvRE7O8h9CWk8"
+            crossorigin="anonymous"></script>
+    <script src="js/plugins/jquery-validate/jquery.validate.min.js"></script>
+    <script src="js/plugins/loaders-css/loaders.css.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
