@@ -12,11 +12,14 @@
 .navbar {
     margin-bottom: 0;
 }
-.navbar-brand { padding-top: 0px; top: 5px}
-.navbar-light .navbar-nav .nav-link { color: white}
-.navbar-light .navbar-nav .nav-link.active { color: white}
+.navbar-brand { padding-top: 0px; padding-bottom: 30px;}
+.navbar-light .navbar-nav .nav-link { color: white; font-size: 90%;}
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    background-color: #3a6de1!important;
+    border-color:#2945b5!important;
+}
 
-.nav-pills .active  a:hover { background-color:#2945b5!important;border-color:#2945b5!important}
 .jumbotron {
     background: none;
     min-height: 100vh;
