@@ -4,6 +4,8 @@ python:
 cache: pip
 install:
       - pip install awscli
+script:
+    - awscli s3 ls codelabs.se
 deploy:
   provider: s3
   access_key_id: AKIAJG2X4TC47P4JGN6A
