@@ -104,6 +104,6 @@ hr{
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: bottom right;
-    transform: skewY(4deg);
-  }﻿
+    transform-origin: bottom left;
+    transform: skewY(-4deg);
+  }
