@@ -5,18 +5,18 @@ cache: pip
 install:
 - pip install awscli
 script:
-- aws s3 ls codelabs.se
+- aws s3 ls $TRAVIS_BRANCH
 deploy:
   provider: s3
   access_key_id: AKIAJG2X4TC47P4JGN6A
   secret_access_key:
     secure: pWB/S3tnqQayUXZCHoYGTjN+rqd00oRQ34ZMIKy+4spnajhV5I1+Sn9ChL4UaG3OAOF8k4vlUZ3vVcrDAsMPicauZysuJV52ci+82fEe19B9Kxid0LiUmhBxlmook8Uis8LfhjxDCv/mvqqbBwwm3pgMjKslURDAkevf34dt4oJWln571yKb97AQxku3pCHOGM0cbURrw8JzL9eI2dPn64kGwJE/QSIPXaRL3cZFppc1zkNc5IKhMIGGAgGirYnOsmVgv6dZcoNz4oGKPXRPGmsRX+aaw6PTP8eMcQt7JSkpxhEGvTupcscyIzm3CYzIfq1mmrLy2FKOZxz2bsB9xQPiNXqv3OB80b4Q+8cSKr+8zuKdARbiPhc4l+3P94NxgHjPAb8JbAjqt+R86XoZ+kzNBY+nEMGli6WQLo783vGd2RGvSHuEWWeHW/uGiePufonRp5m3YljRLOVR1h/fvZVwCoMYpu1hsL+KJ+fooFC2u4PO6VB2RSxJMxNCN3owrGfJCtte40HWdzG3wvAazKGzWX9rXbeUZU04Hk9xHxUBicvhpimdHxs2LZqduuQJPyl2IAXu2mY2whlyZBwesyeQiGH+Z9P6074RH2umok1YyWBT0kCGtHUJiWnbVe1+FTn1W/IKpPa+5Re4IXWiaJHFtaDfp+wTLtnML5eRhYQ=
-  bucket: dev.codelabs.se
+  bucket: $TRAVIS_BRANCH
   local-dir: "."
   acl: public_read
   on:
     repo: codelabsab/web
-    branch: dev.codelabs.se
+    branch: $TRAVIS_BRANCH
 env:
   global:
   - secure: qTbfbbwH6PSKVdDwfrAtLhBFBeijRBRgAum3gNGu/WKdMFE9sV/Ty0N6EnIMq+aDxK5yPh99EAWds1itXsT3Gx/6L6b+bXDUczxzjfvjU+lamBdjIOrX8RZ2plOJt9xbCHfdA/1DbiEJ0yyOTi0fObz66IzOMtEaTRr0+nkuxdgEa8F5fUZSWnxJmsb69CZy4LLtdq3a/08z/A3uFEhw7YmGOSVP8C42RGGXSC/8u7SarSjOlkW17XfcTqlIjAm3PgH+UW+6wfF+dq5gQBJeXA7xPXLA0LVVFw8OHRmKjwKiKP+rqNTT2a92ZngbMaESgmKWztSI2YlP/nMmmU/PXYUA1GclUy2x4QgOhASfbsFHRA4cwxfsHrK6IEsY0HKN87VWzjMQXPu4mLwx4271VnnXyg1GXzaCr7h4hCpJDVT9zjkv+gxBFqvN1+e+MRseegPmLb9t1y/0xDLsT7IswtJ2Z7gbJW/XUD8Jd+fRdlF0RgYHzjRFWG58Dlh404G6XIfv3MVBwLPEcT3VJqKD5j/Aakb3JyJPeVVzibO1hzUiLlNNAM+sHscO+Ne59JPx33NPgBQO9V211ntLJNmuC2wdLlmqbaiLChzFLtRTrgpEuBErV+FVA2i+rpSc2NCdj6NAhDOIqDr6EE1C2OilZRFuG8Z7zd8MehyDdMfmHdk=
