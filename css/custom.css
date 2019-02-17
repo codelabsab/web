@@ -100,30 +100,7 @@
 	left:9px;
 	top:10px;
 }
-.icon.social {
-	float:left;
-	margin:0 5px 0 0;
-	cursor:pointer;
-	background:#3572f4 ;
-	color:#3572f4;
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-    -o-transition: 0.5s; 	
-}
-.icon.social:hover {
-	background:#3572f4 ;
-	color:#3572f4;
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
-	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
-	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
-	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
-	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
-}
+
 
 .icon.social.in i {
 	left:9px;
@@ -258,6 +235,7 @@
     width: 220px;
     height: 220px;
     border-radius: 50%;
+    margin:auto;
 }
 .item-hover.circle .img {
     position: relative;
@@ -329,6 +307,8 @@
     right: 0;
     width: auto;
     height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 .item-hover.circle.effect1 .img:before {
     display: none;
@@ -386,4 +366,42 @@
 }
 .item-hover .card-title {
     color: #3572f4 !important;
+}
+.card-title{ 
+    color: #3572f4 !important;
+}
+
+/*
+.list-inline {
+   margin-left:-35px;
+}
+*/
+
+
+.card-title {
+   margin-bottom: -0.0rem;
+}
+
+.fa-linkedin, .fa-github, .fa-facebook {
+	float:left;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+    -o-transition: 0.5s; 	
+    font-size: 25px;
+    margin-top:-10px;
+}
+.fa-linkedin:hover, .fa-github:hover, .fa-facebook:hover {
+	color:#3572f4;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+    filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 
+    margin-top: -10px;
 }
