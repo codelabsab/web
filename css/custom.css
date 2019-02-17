@@ -369,8 +369,8 @@
 }
 .card-title{ 
     color: #3572f4 !important;
+    font-size: 1.1rem;
 }
-
 /*
 .list-inline {
    margin-left:-35px;
@@ -404,4 +404,18 @@
 	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
     filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 
     margin-top: -10px;
+}
+
+.tp--feature .tp--icon-wrapper i.tp--background-white {
+    color: #584BAA;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6581f1), to(#3572f4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    line-height: 55px !important;
+    display: inline-block;
 }
