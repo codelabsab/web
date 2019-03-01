@@ -419,3 +419,8 @@
     line-height: 55px !important;
     display: inline-block;
 }
+
+.img-fluid-cloud-logo {
+    max-width: 75%;
+    height: auto;
+  }
