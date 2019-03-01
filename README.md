@@ -14,6 +14,6 @@ Code Labs Webpage running on:
 
 # Instructions
 
-`If you push new code travis-CI will trigger a build and push the files to the codelabs.se S3 bucket on AWS`
+`If you push new code, travis-CI will trigger a build and push the files to the codelabs.se S3 bucket on AWS`
 
 `Pushes everything under ./src/web/* to S3 bucket`
