@@ -18,7 +18,7 @@ deploy:
     repo: codelabsab/web
     branch: $TRAVIS_BRANCH
 after_deploy:
-- if [ "$TRAVIS_BRANCH" == 'codelabs.se' ]; then aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id E2MSRD4XHMA41J --paths "/*html"; fi
+- if [ "$TRAVIS_BRANCH" == 'codelabs.se' ]; then aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id E2MSRD4XHMA41J --paths "/*"; fi
 env:
   global:
   - secure: qTbfbbwH6PSKVdDwfrAtLhBFBeijRBRgAum3gNGu/WKdMFE9sV/Ty0N6EnIMq+aDxK5yPh99EAWds1itXsT3Gx/6L6b+bXDUczxzjfvjU+lamBdjIOrX8RZ2plOJt9xbCHfdA/1DbiEJ0yyOTi0fObz66IzOMtEaTRr0+nkuxdgEa8F5fUZSWnxJmsb69CZy4LLtdq3a/08z/A3uFEhw7YmGOSVP8C42RGGXSC/8u7SarSjOlkW17XfcTqlIjAm3PgH+UW+6wfF+dq5gQBJeXA7xPXLA0LVVFw8OHRmKjwKiKP+rqNTT2a92ZngbMaESgmKWztSI2YlP/nMmmU/PXYUA1GclUy2x4QgOhASfbsFHRA4cwxfsHrK6IEsY0HKN87VWzjMQXPu4mLwx4271VnnXyg1GXzaCr7h4hCpJDVT9zjkv+gxBFqvN1+e+MRseegPmLb9t1y/0xDLsT7IswtJ2Z7gbJW/XUD8Jd+fRdlF0RgYHzjRFWG58Dlh404G6XIfv3MVBwLPEcT3VJqKD5j/Aakb3JyJPeVVzibO1hzUiLlNNAM+sHscO+Ne59JPx33NPgBQO9V211ntLJNmuC2wdLlmqbaiLChzFLtRTrgpEuBErV+FVA2i+rpSc2NCdj6NAhDOIqDr6EE1C2OilZRFuG8Z7zd8MehyDdMfmHdk=
