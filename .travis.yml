@@ -18,7 +18,7 @@ deploy:
     repo: codelabsab/web
     branch: $TRAVIS_BRANCH
 after_deploy:
-- if [ "$TRAVIS_BRANCH" == 'codelabs.se' ]; then aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id E2MSRD4XHMA41J --paths "/*html"; fi
+- if [ "$TRAVIS_BRANCH" == 'codelabs.se' ]; then aws configure set preview.cloudfront true && aws cloudfront create-invalidation --distribution-id E2MSRD4XHMA41J --paths "/*"; fi
 
 env:
   global:
