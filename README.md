@@ -17,3 +17,25 @@ Code Labs Webpage running on:
 `If you push new code, travis-CI will trigger a build and push the files to the codelabs.se S3 bucket on AWS`
 
 `Pushes everything under ./src/web/* to S3 bucket`
+
+# Local development
+
+Make sure you have node and npm installed.
+
+Install gulpjs
+
+```
+$ npm install -g gulp
+```
+
+Install local dependices: 
+
+```
+$ npm install
+```
+
+Run gulp
+
+```
+$ gulp
+```
